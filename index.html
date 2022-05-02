@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Font text editor</title>
+        <link rel="stylesheet" href="./style/style.css">
+        <script src="./javascript/script.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     </head>
 
-
     <body>
-        <h1>Olá munddsdao!</h1>
+        <div id="containerAreaText">
+            <div id="areaIcons">
+                <button id="increaseText" onclick="increaseText()" >T+</button>
+
+                <button id="decreaseText" onclick="decreaseText()" >T-</button>
+
+                <input type="checkbox" id="boldText" onclick="boldText()" hidden></input>
+                <label for="boldText"><span><strong>B</strong></span></label>
+
+                <input type="checkbox" id="underlineText" onclick="underlineText()" hidden></input>
+                <label for="underlineText"><span><u>U</u></span></label>
+                
+                <input type="checkbox" id="italicText" onclick="italicText()" hidden></input>
+                <label for="italicText"><span><i>I</i></span></label>
+            </div>
+            <input type="text" id="areaText">
+        </div>
+        
     </body>
 </html>
