@@ -13,6 +13,7 @@
     <body>
         <div id="containerAreaText">
             <div id="areaIcons">
+                <input type="text" id="inputFontSize" value="16" onchange="setFontSize()">
                 <button id="increaseText" onclick="increaseText()" >T+</button>
 
                 <button id="decreaseText" onclick="decreaseText()" >T-</button>
@@ -26,7 +27,7 @@
                 <input type="checkbox" id="italicText" onclick="italicText()" hidden></input>
                 <label for="italicText"><span><i>I</i></span></label>
             </div>
-            <input type="text" id="areaText">
+            <textarea id="areaText"></textarea>
         </div>
         
     </body>

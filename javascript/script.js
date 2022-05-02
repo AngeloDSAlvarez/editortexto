@@ -1,11 +1,18 @@
 let textSize = 16
+
+function setFontSize(){
+    textSize = document.getElementById("inputFontSize").value
+    changeFontSize()
+}
 function increaseText (){
     textSize++
-    document.getElementById("areaText").style.fontSize = textSize + 'px'
+    document.getElementById("inputFontSize").value = textSize
+    changeFontSize()
 }
 function decreaseText (){
     textSize--
-    document.getElementById("areaText").style.fontSize = textSize + 'px'
+    document.getElementById("inputFontSize").value = textSize
+    changeFontSize()
 }
 function boldText(){
     let boldText = document.getElementById("boldText")
@@ -31,6 +38,9 @@ function italicText(){
     if (italicText.checked){
         document.getElementById("areaText").style.fontStyle = 'italic'
     }else{
-        document.getElementById("areaText").style.fontStyle = 'normal'
+        document.getElementById("areaText").style.fontStyle = 'normal' 
     }
+}
+function changeFontSize(){
+    document.getElementById("areaText").style.fontSize = textSize + 'px'
 }
